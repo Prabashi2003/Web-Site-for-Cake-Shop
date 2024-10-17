@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --black: #1B1722;
+    --white : #F0F0F0;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding: 0 0;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.top{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--white);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;      
+}
+.box{
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 0.75rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+    width: 275px;
+}
+.box img{
+    width:100%;
+    height: 300px;
+    padding: 30px 0;
+}
+.box img:hover{
+    transform: scale(1.1);
+}
+a{
+    display: flex;
+    margin: 5px;    
+    position: relative;
+    text-decoration: none;
+    font-size:15px;
+    color:#fff;
+    padding: 5px;
+}
+.text{
+    text-align: center;
+    color:#fff;
+}
+p{
+    font-size:20px;
+    padding: 5px;
+}
+.orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.orderNow button{
+    font-size: 1.2rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.orderNow button:hover{
+    font-size: 1.5rem;
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url(pexels-farook-feroz-12936056.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+/*section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+.product .product-row{
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+}
+.product .product-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+}
+.product .product-row .img img{
+    height: 100%;
+    width: 100%;
+}
+.product .product-row .img img:hover{
+    transform: scale(1.1);
+}
+.product .product-row .content {
+    margin-bottom: 4rem;
+}
+.product .product-row .product-content h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+.product .product-row .product-content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+.product .product-row .product-content .orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.product .product-row .product-content .orderNow button{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+.product .product-row .product-content .orderNow button:hover{
+    font-size: 2rem;
+}*/
